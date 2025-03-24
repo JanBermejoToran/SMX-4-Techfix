@@ -194,6 +194,7 @@
 								<br><br>
 								-Revisa que la impresora esté encendida y sin errores en el panel de control. 
 								<br>
+								<br>
 								<h3><li>Conexión de la computadora: </li></h3>
 								<br>
 								-Verifica que tu computadora esté conectada a la misma red que la impresora. 
@@ -204,11 +205,12 @@
 								<br>
 								-En tu computadora, abre el panel de "Dispositivos e impresoras" (en Windows) o "Preferencias del Sistema > Impresoras y Escáneres" (en Mac). 
 								<br>
-								-Asegúrate de que la impresora de red esté seleccionada como predeterminada y que esté disponible. 
+								-Asegúrate de que la impresora de red esté seleccionada como predeterminada y que esté disponible.  
+								<br> <br>
 								<h3><li>Reiniciar dispositivos: </li></h3>
 								<br>
 								- A veces, simplemente reiniciar la impresora y la computadora puede resolver el problema de conexión. 
-								<br>
+								<br><br>
 								<h3><li>Verificar el estado de la impresora: </li></h3>
 								<br>
 								- Si hay un error específico en la impresora (como falta de tinta o papel atascado), eso también puede impedir la impresión. Verifica que no haya errores. 
@@ -225,7 +227,7 @@
 								<h3>2. Verifica la configuración de la red </h3>
 								<br>
 								- Dirección IP de la impresora: Revisa si la impresora tiene una dirección IP correcta dentro de la red local. A veces, si la impresora no está configurada con una IP estática o tiene conflictos, puede no funcionar correctamente. 
-								<br>
+								<br><br>
 								- Si la impresora está configurada para obtener una dirección IP automáticamente (DHCP), asegúrate de que haya suficiente espacio en el rango de direcciones IP para que obtenga una válida. 
 								<br><br>
 								<h3>3. Verifica la conexión de la impresora </h3>
@@ -285,6 +287,7 @@
 								<h2>No puedo acceder al router </h2>
 								<br><br>
 								Si no puedes acceder al router, eso podría complicar un poco las cosas, pero aún hay algunos pasos que puedes intentar: 
+								<br><br>
 								<h3>Reinicia el router: </h3>
 								<br>
 								<li>Apágalo y enciéndelo de nuevo, esperando unos 30 segundos. Esto a veces soluciona problemas de acceso. </li>
@@ -296,6 +299,7 @@
 								<h3>Usa la IP predeterminada del router: </h3>
 								<br>
 								<li>La mayoría de los routers tienen una IP predeterminada para acceder a su configuración, como 192.168.1.1 o 192.168.0.1. Prueba ingresar esa dirección en el navegador. Si te pide un nombre de usuario y contraseña, usa las credenciales predeterminadas (que suelen estar en una etiqueta en el router o en el manual). </li>
+								<br><br>
 								<h3>Comprueba la conexión local: </h3>
 								<br>
 								<li>Si tu computadora está conectada al router (ya sea por cable o Wi-Fi), asegúrate de que puedas acceder a otras páginas web. Si no puedes, el problema podría ser con la conexión a Internet y no con el acceso al router. </li>
@@ -309,7 +313,7 @@
 								<h2>La targeta de Red tiene el LED de color Rojo </h2>
 								<br>
 								Si el LED rojo está en la tarjeta de red de un dispositivo (como una computadora, por ejemplo), las posibles causas son las siguientes: 
-								<br>
+								<br><br><br>
 								<h3>Cable Ethernet desconectado o dañado: </h3>
 								<br>
 								<br>
@@ -392,7 +396,7 @@
 								<h2>No se puede acceder remotamente a un dispositivo de la red </h2>
 								<br><br>
 								Si no puedes acceder remotamente a un dispositivo de red, el problema podría estar relacionado con varias causas. Aquí te dejo algunos pasos para intentar solucionarlo: 
-								<br>
+								<br><br>
 								<h3>1. Verificar la conexión de red </h3>
 								<br><br>
 								<li>Asegúrate de que ambos dispositivos estén en la misma red local (si es acceso local) o que tengan acceso a Internet (si es un acceso remoto por internet). </li>
@@ -409,6 +413,51 @@
 								<h3>3. Comprobar el firewall </h3>
 								<br><br>
 								<li>El firewall del dispositivo al que intentas acceder podría estar bloqueando la conexión remota.  </li>
+								<br>
+								<li>- Asegúrate de que el puerto necesario para el acceso remoto esté abierto en el firewall (por ejemplo, en RDP suele ser el puerto 3389). </li>
+								<br>
+								<li>- Si usas un firewall de red (en el router o en un dispositivo intermedio), verifica que no esté bloqueando el acceso. </li>
+								<br>
+								Para desactivar temporalmente el firewall:  
+								<br>
+								<li>En Windows: Ve a Panel de control > Sistema y seguridad > Firewall de Windows. </li>
+								<br>
+								<li>En macOS: Ve a Preferencias del Sistema > Seguridad y privacidad > Firewall. </li>
+								<br>
+								<br>
+								<h3>4. Comprobar la dirección IP </h3>
+								<br>
+								<br>
+								<li>Asegúrate de estar utilizando la dirección IP correcta del dispositivo al que intentas acceder. </li>
+								<br>
+								<li>- Para encontrar la IP en Windows, abre la terminal (CMD) y escribe ipconfig. </li>
+								<br>
+								<li>En macOS, abre la terminal y escribe ifconfig. </li>
+								<br><br>
+								Si estás intentando acceder de manera remota a través de Internet, asegúrate de que la dirección IP pública y los puertos de reenvío en el router estén configurados correctamente. 
+								<br><br><br>
+								<h3>5. Configurar el router y el reenvío de puertos </h3>
+								<br><br>
+								<li>Si intentas acceder a un dispositivo de manera remota a través de Internet (no en la misma red local), debes asegurarte de que tu router esté configurado para reenviar puertos correctamente al dispositivo de destino.  </li>
+								<br>
+								<li>- Por ejemplo, si estás utilizando RDP (escritorio remoto de Windows), debes abrir el puerto 3389 en tu router y redirigirlo al dispositivo correspondiente. </li>
+								<br><br><br>
+								<h3>6. Revisar el servicio de red </h3>
+								<br><br>
+								<li>Verifica que el servicio de red que permite el acceso remoto esté funcionando correctamente en el dispositivo.  </li>
+								<br>
+								<br>
+								<li>- Si estás usando RDP en Windows, asegúrate de que el servicio de Escritorio remoto esté habilitado. </li>
+								<br>
+								<li>- En otros sistemas, como VNC o SSH, asegúrate de que el servicio esté activo y configurado correctamente. </li>
+								<br>
+								<h3>7. Reiniciar dispositivos </h3>
+								<br>
+								<li>Si has hecho cambios en la configuración y aún no puedes acceder, prueba reiniciar tanto el dispositivo remoto como el dispositivo desde el cual intentas acceder. A veces, esto puede solucionar problemas de red temporales. </li>
+								<br>
+								<h3>8. Comprobar la conexión de red (VPN) </h3>
+								<br><br>
+								
 								
 
  
