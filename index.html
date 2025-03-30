@@ -172,19 +172,25 @@
 								<!--Com puc configurar una aplicació perquè s’iniciï automàticament al engegar el Linux?-->
 								<h1>LINUX</h1>
 			<!--primera pregunta---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+								<hr>
 								<h2>1- Com puc configurar una aplicació perquè s’iniciï automàticament al engegar el Linux?</h2>
 								<br><br>
-								<h4>Podemos hacerlo con el comando <b>"systemd"</b> (Recomendado para servicios y aplicaciones en segundo plano) </h4>
-								<ol>
-									<li>Crea un archivo de servicio </li>
-									<br>
-									<span class="image main"><img src="images/sistemasoperativos/so1.1.png" alt="" /></span>
-									<li>Añade este contenido (cambia <b>"ExecStart"</b> por tu programa): </li>
-									<span class="image main"><img src="images/sistemasoperativos/so1.png" alt="" /></span>
-									<li>Habilita e inicia el servicio</li>
-									<span class="image main"><img src="images/sistemasoperativos/so1.2.png" alt="" /></span>
+								<h4>Para hacer que una aplicacion se abra automaticamente cuando se encienda linux lo que haremos sera: </h4>
+								
+								<li>Añadir la aplicacion a través del directorio .config/autostart </li>
+								<br><br>
+								<p>1- Abre una terminal.</p><br>
+								<p>Navega hasta la carpeta <b>~/.config/autostart/</b> (si no existe, créala):</p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop1.1.png" alt="" /></span>
+								<li>Crea un archivo de escritorio de la aplicación con extensión<b>  .desktop.</b> Por ejemplo:</li>
+								<span class="image main"><img src="images/sistemasoperativos/sisop1.2.png" alt="" /></span>
+								<li>Agrega el siguiente contenido al archivo (sustituye <b>miaplicacion</b> con el nombre de la aplicación y la <b>ruta correspondiente</b>):</li>
+								<span class="image main"><img src="images/sistemasoperativos/sisop1.3.png" alt="" /></span>
+								<p>Guarda y cierra el archivo. Esto hará que la aplicación se inicie automáticamente cada vez que inicies sesión. </p>
+								<br><br>
+								<p>Y si se han seguido los pasos como deben tomarse ya deberia funcionar, para asegurarse podemos reiniciar el ordenador y ver si la aplicacion se abre al encenderse</p>
+
 									
-								</ol>
 							<!------------------segunda pregunta------------------------------>
 								<hr>
 								<h2>2- Com puc afegir un nou usuari a Linux? </h2>
@@ -198,63 +204,63 @@
 								<h3>3. Definir una contraseña (si no se configuró antes)</h3>
 								<li>Para definir la contraseña de  </li>
 								<span class="image main"><img src="images/sistemasoperativos/so1.2.png" alt="" /></span>
-								<hr
+								<hr>
 									
 
 								
-								<h3>3- Com modifico la meva contrasenya de Linux?</h2>
-								<br><br>
-
-								
-								<h3>4- No recordo la meva contrasenya</h2>
+								<h2>3- Com modifico la meva contrasenya de Linux?</h2>
 								<br><br>
 
 								<hr>
-								<h3>5- Com puc particionar un disc en Linux?</h2>
+								<h2>4- No recordo la meva contrasenya</h2>
 								<br><br>
 
 								<hr>
-								<h3>6- Com puc activar i gestionar el tallafoc de Linux?</h2>
+								<h2>5- Com puc particionar un disc en Linux?</h2>
 								<br><br>
 
 								<hr>
-								<h3>7- El sistema Linux no s’inicia</h2>
+								<h2>6- Com puc activar i gestionar el tallafoc de Linux?</h2>
 								<br><br>
 
 								<hr>
-								<h3>8- El Linux triga molt a iniciar-se</h2>
+								<h2>7- El sistema Linux no s’inicia</h2>
+								<br><br>
+
+								<hr>
+								<h2>8- El Linux triga molt a iniciar-se</h2>
 								<br><br>
 
 								<hr>
 								<h1>WINDOWS</h1>
 
-								<h3>1- He oblidat la contrasenya de Windows </h2>
+								<h2>1- He oblidat la contrasenya de Windows </h2>
 								<br><br>
 
 								<hr>
-								<h3>2- El sistema Windows no s’ìnicia </h2>
+								<h2>2- El sistema Windows no s’ìnicia </h2>
 								<br><br>
 								<hr>
-								<h3>3- El Windows va molt lent </h2>
+								<h2>3- El Windows va molt lent </h2>
 								<br><br>
 								<hr>
-								<h3>4- El Windows triga molt a iniciar-se </h2>
-								<br><br>
-
-								<hr>
-								<h3>5- No veig les extensions dels fitxers a Windows </h2>
+								<h2>4- El Windows triga molt a iniciar-se </h2>
 								<br><br>
 
 								<hr>
-								<h3>6- Com puc eliminar les notificacions de Windows? </h2>
+								<h2>5- No veig les extensions dels fitxers a Windows </h2>
 								<br><br>
 
 								<hr>
-								<h3>7- No em puc conectar a internet en Windows  </h2>
+								<h2>6- Com puc eliminar les notificacions de Windows? </h2>
 								<br><br>
 
 								<hr>
-								<h3>8- L’escriptori del Windows desapareix i veig una pantalla de color blau indicant-me un error crític (pantalla blava de la mort) </h2>
+								<h2>7- No em puc conectar a internet en Windows  </h2>
+								<br><br>
+
+								<hr>
+								<h2>8- L’escriptori del Windows desapareix i veig una pantalla de color blau indicant-me un error crític (pantalla blava de la mort) </h2>
 								<br><br>
 
 								
