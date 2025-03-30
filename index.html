@@ -188,22 +188,27 @@
 								<span class="image main"><img src="images/sistemasoperativos/sisop1.3.png" alt="" /></span>
 								<p>Guarda y cierra el archivo. Esto hará que la aplicación se inicie automáticamente cada vez que inicies sesión. </p>
 								<br><br>
-								<p>Y si se han seguido los pasos como deben tomarse ya deberia funcionar, para asegurarse podemos reiniciar el ordenador y ver si la aplicacion se abre al encenderse</p>
+								Y si se han seguido los pasos como deben tomarse ya deberia funcionar, para asegurarse podemos reiniciar el ordenador y ver si la aplicacion se abre al encenderse
 
 									
 							     	<!------------------pregunta 2 linux------------------------------>
 								<hr>
 								<h2>2- Com puc afegir un nou usuari a Linux? </h2>
 								<br><br>
-								<p> Para añadir un nuevo comando lo que usaremos es un comando en la terminal.</p> 
-								<h3>1. Crear un nuevo usuario</h3>
-								<span class="image main"><img src="images/sistemasoperativos/so1.2.png" alt="" /></span>
+								<p> Para crear una nueva cuenta de usuario normal, ejecute el comando useradd, seguido de las opciones que se enumeran a continuación y el nombre del usuario. Por ejemplo, para crear un nuevo usuario llamado "john", ejecutaría lo siguiente:</p> 
 								<br>
-								<p>Te pedirá una contraseña y algunos datos adicionales (puedes dejarlos en blanco).</p>
+								sudo useradd -m -c "John Doe" john
 								<br>
-								<h3>3. Definir una contraseña (si no se configuró antes)</h3>
-								<li>Para definir la contraseña de  </li>
-								<span class="image main"><img src="images/sistemasoperativos/so1.2.png" alt="" /></span>
+								Al crear la cuenta, utilizamos dos opciones, "-m" y "-c". Así que expliquemos su significado.
+								<br>
+								<li><b>-m (–create-home):</b> de forma predeterminada, el comando useradd no crea un directorio de inicio para el usuario recién creado. Usando la opción “-m”, especificamos que queremos explícitamente que se cree uno.  </li>
+								<li><b>-c (–comentario):</b> normalmente se usa para especificar el nombre completo del usuario, los administradores también pueden usarlo para establecer cierta información de identificación sobre la cuenta para recordarle más tarde cuál es su propósito.  </li>
+								<p>Sin embargo, el nuevo usuario está bloqueado y requiere una contraseña establecida para la cuenta que se utilizará. Entonces, lo siguiente que debe hacer es usar el comando passwd seguido del nombre de usuario para establecer una contraseña:</p>
+								<li>sudo passwd john</li>
+								<br>
+								<span class="image main"><img src="images/sistemasoperativos/sisop2.1.png" alt="" /></span>
+								
+								
 								<hr>
 									
 
