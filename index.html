@@ -247,11 +247,63 @@
 								<!------------------pregunta 5 linux------------------------------>
 								<h2>5- Com puc particionar un disc en Linux?</h2>
 								<br><br>
-
+								<p>Para particionar un disco en Linux, puedes usar herramientas como fdisk, parted o gparted (si tienes entorno gráfico). Aquí te dejo un ejemplo con fdisk: </p>
+								<ol> 
+								 	<li>Abre la terminal.  </li>
+								</ol>
+								<p>  Pon este comando para ver la lista los discos disponibles: </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop5.1.png" alt="" /></span>
+								<p> Selecciona el disco que quieres particionar (reemplaza /dev/sdX por el disco correcto): </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop5.2.png" alt="" /></span>
+								<p> Comienza a crear particiones con la siguiente serie de comandos: </p>
+								<li>Para crear una nueva partición: n </li>
+								<li>Para definir el tipo de partición: t </li>
+								<li>Para guardar los cambios: w </li>
+								<br>
+								<p> Por ejemplo, para crear una partición primaria de 20 GB, sigue los pasos dentro de fdisk: </p>
+								<br>
+								<ol>
+									<li> n (nueva partición) </li>
+									<li> Elige el tipo (primaria o lógica). </li>
+									<li> Ingresa el tamaño. </li>
+									<li> w para guardar los cambios. </li>									
+								</ol>
+								<p> Finalmente, puedes formatear la partición con mkfs: </p>
+								<br>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.1.png" alt="" /></span>
+								<br>
+								
 								<hr>
 								<!------------------pregunta 6 linux------------------------------>
 								<h2>6- Com puc activar i gestionar el tallafoc de Linux?</h2>
 								<br><br>
+								<p>Para activar y gestionar el firewall en Linux, puedes usar ufw (Uncomplicated Firewall) o iptables. Aquí te muestro cómo hacerlo con ufw, que es más fácil de gestionar.  </p>
+								<br>
+								<h3> Activar y gestionar ufw: </h3>
+								<br>
+								<li> Instalar ufw (si no está instalado): </li>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.2.png" alt="" /></span>
+								<br>
+								<p> Activar el firewall: </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.3.png" alt="" /></span>
+								<p> Comprobar el estado del firewall: </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.4.png" alt="" /></span>
+								<p>Permitir una conexión a través del firewall (por ejemplo, permitir tráfico HTTP/HTTPS): </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.5.png" alt="" /></span>
+								<p> Denegar el tráfico a un puerto específico (por ejemplo, denegar SSH): </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.6.png" alt="" /></span>
+								<p> Desactivar el firewall: </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.7.png" alt="" /></span>
+								<p> Ver las reglas configuradas: </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.8.png" alt="" /></span>
+								<h3> Reglas comunes: </h3>
+								<li>Permitir todo el tráfico de la red local: </li>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.9.png" alt="" /></span>
+								<p> Permitir un rango de puertos: </p>
+								<span class="image main"><img src="images/sistemasoperativos/sisop6.10.png" alt="" /></span>
+								<b>Configuración avanzada con iptables: </b>
+								<p>Si quieres un control más detallado del firewall, puedes usar iptables, pero es más complejo y requiere un buen entendimiento de las reglas de red. </p>
+								
 
 								<hr>
 								<!------------------pregunta 7 linux------------------------------>
